@@ -16,18 +16,11 @@ import Header from "./component/Header.jsx";
 import  Footer  from "./component/Footer.jsx";
 import Gap from "./component/Gap.jsx";
 
-// import { useLocation } from 'react-router-dom';
-// import MyDatePicker from './MyDatePicker';
-
 
 function App() {
-  // Inside the component handling the /Session route
-// const location = useLocation();
-// const { setUsername } = location.state || {};
-
   const [alert, setAlert] = useState(null);
   const [username, setUsername] = useState('');
-  // console.log(props.setUsername())
+
 
   const showalert = (message, type) => {
     setAlert({
