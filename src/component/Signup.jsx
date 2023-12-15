@@ -25,7 +25,7 @@ export default function Signup(props) {
       
       if(response.data.ok) {
         props.showalert("Account created successfully.", "success");
-        navigate('/TeacherDasboard')
+        navigate('/TeacherDashboard')
       } else {
         props.showalert("Invalid Credentials.", "danger");
 
@@ -46,14 +46,14 @@ export default function Signup(props) {
     }, 2000);
   };
   return (
-    <div className="flex min-h-full flex-1  justify-center   lg:px-8 ">
+    <div className="flex min-h-full flex-1  justify-center  ">
     <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
-  <img src="src\component\img\gi3.gif" className=" img" alt="Logo" />
+  <img src="src\component\img\gi3.gif" className=" img ml-20" alt="Logo" />
     {/* <img src="src\component\img\ILl1.png" className="h-60  image-to-slide-and-bounce " alt="Logo" /> */}
       {/* Your Company Logo */}
     </div>
-    <div className="mt-6 sm:mx-auto w-full sm:w-full  sm:max-w-sm borderr">
-      <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 ">
+    <div className=" sm:mx-auto w-full sm:w-full  sm:max-w-sm borderr ml-14">
+      <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 ">
         Sign Up for an Account
       </h2>
   <br /><br />
@@ -112,11 +112,11 @@ export default function Signup(props) {
           </div>
         </div>
 
-        <div>
+        <div className='center'>
           <button
             type="submit"
-            className="flex w-auto justify-center rounded-md bg-orange-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white
-            shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="flex w-auto justify-center rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white
+            shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign Up
           </button>

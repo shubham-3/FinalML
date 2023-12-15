@@ -36,20 +36,20 @@ export default function Signin(props) {
   } 
 
     return (
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ml-52">
+        <div className="flex min-h-full flex-1  justify-center px-6 py-12 lg:px-4 ml-52">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img src="src/component/img/ILl1.png" className="h-60 image-to-slide-and-bounce " alt="Logo" />
+      <img src="src/component/img/ILl1.png" className="h-80 image-to-slide-and-bounce mt-10 " alt="Logo" />
             {/* <img
               className="mx-auto h-24 w-auto"
               src="/src/assets/logo3.png"
               alt="Your Company"
             /> */}
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Login in to your account
-            </h2>
           </div>
   
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className="sm:mx-auto sm:w-full sm:max-w-sm borderr">
+            <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+              Login in to your account
+            </h2>
             <form className="space-y-6" method="POST" onSubmit={ handleLogIn}>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900  text-left	">
@@ -93,11 +93,11 @@ export default function Signin(props) {
                 </div>
               </div>
   
-              <div>
+              <div className="center">
                 <button
                   type="submit"
-                  className="flex w-full justify-center rounded-md bg-orange-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white
-                   shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex w-auto justify-center rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white
+                   shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 " 
                 >
                   Log in
                 </button>

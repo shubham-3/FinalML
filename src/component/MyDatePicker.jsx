@@ -27,10 +27,12 @@ const MyDatePicker = (props) => {
 
 
   return (
-    <div className="  flex items-center shadow-xl">
+    <div className=" ml-52 flex flex-col items-center shadow-xl">
       <img src="src/component/img/p1.png" className="h-60 home-animation " alt="Logo" />
+
+
+      <span className="font-medium text-2xl"> DashBoard</span>
       <div className="flex flex-col items-center justify-start min-h-screen ">
-      <span className="font-medium text-2xl"> DashBoard : {props.username} : {localStorage.getItem("username")}</span>
 
         <div className="border-2 border-orange-900 my-5 p-20 rounded-md flex flex-col items-center justify-center shadow ">
           <h1 className="text-xl font-medium">Choose the date and lecture.</h1>
@@ -122,7 +124,7 @@ const MyDatePicker = (props) => {
       </Transition>
     </Menu>
     </div>
-          <Link to='/sportal'>
+          <Link to='#'>
           <button type="button" className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex flex-col items-center justify-start m-24">Submit</button>
           </Link>
         </div>
