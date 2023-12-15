@@ -46,7 +46,7 @@ export default function Signup(props) {
     }, 2000);
   };
   return (
-    <div className="flex min-h-full flex-1  justify-center  ">
+    <div className="flex min-h-full flex-1  justify-center  mt-8 ">
     <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
   <img src="src\component\img\gi3.gif" className=" img ml-20" alt="Logo" />
     {/* <img src="src\component\img\ILl1.png" className="h-60  image-to-slide-and-bounce " alt="Logo" /> */}

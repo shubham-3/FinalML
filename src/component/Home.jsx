@@ -5,7 +5,7 @@ import WordFlick from "./WordFlick";
 
 function Home() {
   return (
-    <div className="home-container ml-52">
+    <div className="home-container ">
       <div className="header-content">
         <div className="logo-container">
           <img src="src/component/img/112.png" className="logo-main" alt="Logo 1" />

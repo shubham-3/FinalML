@@ -27,7 +27,7 @@ const MyDatePicker = (props) => {
 
 
   return (
-    <div className=" ml-52 flex flex-col items-center shadow-xl">
+    <div className=" flex flex-col items-center shadow-xl">
       <img src="src/component/img/p1.png" className="h-60 home-animation " alt="Logo" />
 
 

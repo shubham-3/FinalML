@@ -36,7 +36,7 @@ export default function Signin(props) {
   } 
 
     return (
-        <div className="flex min-h-full flex-1  justify-center px-6 py-12 lg:px-4 ml-52">
+        <div className="flex min-h-full flex-1  justify-center  py-12 lg: ml-43">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
       <img src="src/component/img/ILl1.png" className="h-80 image-to-slide-and-bounce mt-10 " alt="Logo" />
             {/* <img
