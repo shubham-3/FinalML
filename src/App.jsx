@@ -11,11 +11,11 @@ import Mydatepickersecond from "./component/Mydatepickersecond.jsx";
 import TeacherDashboard from "./component/TeacherDashboard.jsx";
 import StudentsPortal from "./component/StudentsPortal.jsx";
 import StudentInfo from "./component/StudentInfo.jsx";
+import End from "./component/End.jsx";
 import "./App.css";
 import Header from "./component/Header.jsx";
 import  Footer  from "./component/Footer.jsx";
 import Gap from "./component/Gap.jsx";
-import End from "./component/End.jsx"
 
 
 function App() {
@@ -44,10 +44,10 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="signin" element={<Signin showalert={showalert}  setUsername={setUsername} />} />
           <Route path="signup" element={<Signup showalert={showalert} />} />
-          <Route path="End" element={<End/>}></Route>
           <Route path="session" element={<MyDatePicker showalert={showalert}  setUsername={setUsername} username={username} />} />
           <Route path="TeacherSession" element={<Mydatepickersecond showalert={showalert} />} />
           <Route path="TeacherDashboard" element={<TeacherDashboard />} />
+          <Route path="end" element={<End />} />
           <Route path="sportal" element={<StudentsPortal />} />
           <Route path="data" element={<StudentInfo />} />
         </Routes>

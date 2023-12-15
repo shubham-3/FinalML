@@ -24,13 +24,13 @@ function Home() {
         <div className="button-container">
           <Link
             to="/signin"
-            className="button sign-in"
+            className="button sign-in bg-indigo-600 "
           >
             Log in
           </Link>
           <Link
             to="/signup"
-            className="button sign-up"
+            className="button sign-up bg-indigo-600 "
           >
             Get started
           </Link>

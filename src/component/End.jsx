@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function End() {
   const [sessionEnded, setSessionEnded] = useState(false);
@@ -13,13 +14,16 @@ function End() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="animate-fadeIn">
-        <h1 className="text-4xl font-bold mb-8">Beautiful Page with Animations</h1>
       </div>
-      {!sessionEnded && (
-        <button onClick={endSession} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <NavLink
+        to="/TeacherSession">
+        <button className='flex w-auto justify-center rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white
+                   shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
+        
           End Session
         </button>
-      )}
+        </NavLink>
+      
     </div>
   );
 }
