@@ -10,7 +10,7 @@ const saltRounds = 10
 dotenv.config()
 
 const app = express()
-const port = 3031
+const port = 5057
 
 mongoose.connect(process.env.MONGODB_URI)
 

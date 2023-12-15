@@ -1,7 +1,23 @@
+// StudentsPortal.js
 import React from "react";
-import {Link } from "react-router-dom"
+import Row from "./Row";
 
 const StudentsPortal = () => {
+  const students = [
+    {
+      name: "John Doe",
+      rollNumber: "12345",
+      gender: "Male",
+      progress: 30, // Change progress to a number (without "%")
+    },
+    {
+      name: "Jane Smith",
+      rollNumber: "67890",
+      gender: "Female",
+      progress: 80, // Change progress to a number (without "%")
+    },
+    // Add more student data as needed
+  ];
   return (
     <div>
       <div className="relative overflow-x-auto my-8 ml-52">
@@ -21,86 +37,14 @@ const StudentsPortal = () => {
                 Progress
               </th>
               <th scope="col" className="px-6 py-3">
-                Status 
+                Status
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                dsflflajfl
-              </td>
-              <td className="px-6 py-4">12345</td>
-              <td className="px-6 py-4">Male</td>
-              <td className="px-6 py-4">
-                <div className="relative pt-1">
-                  <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-emerald-200">
-                    <div
-                      style={{ width: "30%" }}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                    ></div>
-                  </div>
-                </div>
-              </td>
-             <Link to="/data"><td className="px-6 py-4">View</td></Link> 
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                dsflflajfl
-              </td>
-              <td className="px-6 py-4">12345</td>
-              <td className="px-6 py-4">Male</td>
-              <td className="px-6 py-4">
-                <div className="relative pt-1">
-                  <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-emerald-200">
-                    <div
-                      style={{ width: "80%" }}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                    ></div>
-                  </div>
-                </div>
-              </td>
-              <Link to="/data"><td className="px-6 py-4">View</td></Link>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                dsflflajfl
-              </td>
-              <td className="px-6 py-4">12345</td>
-              <td className="px-6 py-4">Male</td>
-              <td className="px-6 py-4">
-                <div className="relative pt-1">
-                  <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-emerald-200">
-                    <div
-                      style={{ width: "40%" }}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
-                    ></div>
-                  </div>
-                </div>
-              </td>
-              <Link to="/data"><td className="px-6 py-4">View</td></Link>
-
-
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                fksldfjklsfj
-              </td>
-              <td className="px-6 py-4">67890</td>
-              <td className="px-6 py-4">Female</td>
-              <td className="px-6 py-4">
-                <div className="relative pt-1">
-                  <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-emerald-200">
-                    <div
-                      style={{ width: "15%" }}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
-                    ></div>
-                  </div>
-                </div>
-              </td>
-              <Link to="/data"><td className="px-6 py-4">View</td></Link>
-            </tr>
-            {/* Add more rows as needed */}
+            {students.map((student, index) => (
+              <Row key={index} student={student} />
+            ))}
           </tbody>
         </table>
       </div>
