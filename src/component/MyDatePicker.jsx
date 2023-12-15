@@ -33,7 +33,7 @@ const MyDatePicker = (props) => {
   return (
     <div className="flex items-center shadow-xl">
       <div className="flex items-center justify-center w-1/3 ml-40">
-        <img src="src/component/img/p1.png" className="h-60 home-animation" alt="Logo" />
+        <img src="src/component/img/p1.png" className="h-100 home-animation" alt="Logo" />
       </div>
 
       <div className="flex flex-col items-center justify-start w-1/2">
@@ -66,7 +66,7 @@ const MyDatePicker = (props) => {
           <Link to='/end'>
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-black hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex flex-col items-center justify-start m-24"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-indigo-600 rounded-lg border border-black hover:bg-indigo-900 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-black dark:hover:bg-gray-700 flex flex-col items-center justify-start m-24 "
             >
               Submit
             </button>

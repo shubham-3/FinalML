@@ -115,7 +115,7 @@ export default function Signup(props) {
         <div className='center'>
           <button
             type="submit"
-            className="flex w-auto justify-center rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white
+            className="flex w-auto justify-center rounded-full bg-indigo-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white
             shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign Up
